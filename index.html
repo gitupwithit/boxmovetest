@@ -6,7 +6,7 @@
 
 <body>
     
-<div onclick="handleTouch(ev)" id="box">
+<div onclick="handleTouch(e)" id="box">
   
   <!-- ontouchstart="handleTouch(ev)"  -->
  
@@ -15,7 +15,7 @@
 </p>
 
 <script>
-  function handleTouch(ev) {
+  function handleTouch(e) {
     if(e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel'){
         var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
         x = touch.pageX;
