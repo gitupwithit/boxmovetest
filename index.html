@@ -2,14 +2,17 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-</head>
-  <body>
 
 <div ontouchstart="handleTouch(ev)" id="box">
  
 </div>
 
-<p> <span id="num"></span> </p>
+<p> <span id="num"> </span>
+</p>
 
-  </body>
+<script>
+  function handleTouch(ev) {
+  console.log(ev);
+  num.innerHTML = ev
+}
+</script>
