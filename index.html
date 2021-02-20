@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-</head>
-  <body>
+<body>
 
-<div ontouchstart="handleTouch(ev)" id="box">
- 
-</div>
+<h1>DOM touchstart Event</h1>
 
-<p> <span id="num"></span> </p>
+<p ontouchstart="myFunction()">Touch this paragraph to trigger a function that will write "Hello World".</p>
 
-  </body>
+<p><strong>Note:</strong> This example is for touch devices only.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+
+</body>
+</html>
