@@ -3,18 +3,18 @@
 <head>
   <link rel="stylesheet" href="style.css">
 
-<div ontouchstart="handleTouch(ev)" id="box">
+<div ontouchstart="handleTouch()" id="box">
  
 </div>
   
-<p ontouchstart="handleTouch(ev)">Touch this paragraph to trigger a function that will write "Hello World".</p>
+<p ontouchstart="handleTouch()">Touch this paragraph to trigger a function that will write "Hello World".</p>
 
 <p> <span id="num"> </span>
 </p>
 
 <script>
-  function handleTouch(ev) {
-  console.log(ev);
-  num.innerHTML = ev
+  function handleTouch() {
+  alert('hi')
+  num.innerHTML = 123
 }
 </script>
