@@ -14,8 +14,8 @@
 
 <script>
   function handleTouch(ev) {
-    var x = ev.touch[0].clientX;
-    var y = ev.touch[0].clientY;
+    var x = ev.touches[0].clientX;
+    var y = ev.touches[0].clientY;
     console.log(x + ' ' + y);
     alert(x + ' ' + y);
   }
