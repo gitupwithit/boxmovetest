@@ -5,5 +5,6 @@ const num = document.getElementById("num");
 
 function handleTouch(ev) {
   console.log(ev);
-  num.innerHTML = ev
+  num.innerHTML = ev;
+  alert('works');
 }
